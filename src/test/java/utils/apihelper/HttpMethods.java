@@ -5,9 +5,9 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 
-public class httpMethods
+public class HttpMethods
 {
-    public httpMethods(String uri)
+    public HttpMethods(String uri)
     {
         RestAssured.baseURI=uri;
     }

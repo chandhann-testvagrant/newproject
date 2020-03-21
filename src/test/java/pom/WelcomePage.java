@@ -3,20 +3,20 @@ package pom;
 import org.json.JSONObject;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
-import utils.uihelper.basicActions;
+import utils.uihelper.BasicActions;
 
-public class welcomePage extends basicActions
+public class WelcomePage extends BasicActions
 {
-    public welcomePage(WebDriver driver)
+    public WelcomePage(WebDriver driver)
     {
         super(driver);
     }
 
-    public boolean searchBeer(String Beer)
+    public boolean searchBeer(String beer)
     {
         boolean result=true;
-        typeByXpath("//input",Beer);
-        ClickByXpath("//button");
+        typeByXpath("//input",beer);
+        clickByXpath("//button");
         try{waitForAlertAndAccept(5);result=false;}catch (TimeoutException e){}
 
         return result;

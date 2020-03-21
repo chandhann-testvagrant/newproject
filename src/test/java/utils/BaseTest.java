@@ -1,6 +1,6 @@
 package utils;
 
-import generic.constants;
+import generic.Constants;
 import io.github.bonigarcia.wdm.DriverManagerType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeSuite;
 
 import java.util.concurrent.TimeUnit;
 
-public class baseTest implements constants
+public class BaseTest implements Constants
 {
     protected WebDriver driver ;
     @BeforeSuite
@@ -20,7 +20,7 @@ public class baseTest implements constants
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(Url);
+        driver.get(url);
     }
 
     @AfterSuite

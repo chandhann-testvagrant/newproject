@@ -10,15 +10,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
 import java.util.List;
 
-public class basicActions
+public class BasicActions
 {
     private WebDriver driver;
-    protected basicActions(WebDriver driver)
+    protected BasicActions(WebDriver driver)
     {
         this.driver=driver;
     }
 
-    protected void ClickByXpath(String xpath)
+    protected void clickByXpath(String xpath)
     {
         int attempts = 0;
         while(attempts < 5)
@@ -34,15 +34,15 @@ public class basicActions
         }
     }
 
-    protected void ClickByID(String ID)
+    protected void clickByID(String id)
     {
         int attempts = 0;
         while(attempts < 5)
         {
             try
             {
-                new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.id(ID)));
-                driver.findElement(By.id(ID)).click();
+                new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.id(id)));
+                driver.findElement(By.id(id)).click();
                 break;
             } catch(StaleElementReferenceException e){}
 
@@ -102,7 +102,7 @@ public class basicActions
         return ele_s;
     }
 
-    protected List<WebElement> findElementsByClassName(String ClassName)
+    protected List<WebElement> findElementsByClassName(String className)
     {
         List<WebElement> ele_s=new ArrayList<WebElement>();
         int attempts = 0;
@@ -110,7 +110,7 @@ public class basicActions
         {
             try
             {
-                ele_s= driver.findElements(By.className(ClassName));
+                ele_s= driver.findElements(By.className(className));
                 break;
             } catch(StaleElementReferenceException e){}
 
