@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6cd546d-3b2b-4f98-8479-bc15f997ec31" name="Default Changelist" comment="--&gt;changed the case of variables name, class and methods">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/executor/executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/executor/Executor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/generic/constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/generic/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pom/welcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pom/WelcomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/apihelper/httpMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/apihelper/HttpMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/baseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/uihelper/basicActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/uihelper/BasicActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/executor/executor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/executor/executor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/generic/constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/generic/constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pom/welcomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pom/welcomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/apihelper/httpMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/apihelper/httpMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/baseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/baseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/uihelper/basicActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/uihelper/basicActions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584779031581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="--&gt;changed the case of variables name, class and methods">
+      <created>1584780291500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584780291500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,30 +140,30 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="435" y="145" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1440.822@0.23.1440.822" timestamp="1584779429149" />
-    <state x="342" y="35" key="CommitChangelistDialog2" timestamp="1584780187230">
+    <state x="342" y="35" key="CommitChangelistDialog2" timestamp="1584781262634">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="342" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1584780187230" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1584780250217">
+    <state x="342" y="35" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1584781262634" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1584781619561">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1584682738801" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1584780250217" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1584780250216">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1584781619561" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1584781619559">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1584682738800" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1584780250216" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1584780250215">
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1584781619559" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1584781619558">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1584682738799" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1584780250215" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1584780250216">
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1584781619558" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1584781619560">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1584682738800" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1584780250216" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1584781619560" />
     <state x="258" y="92" key="Maven.ArtifactSearchDialog" timestamp="1584617056097">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
@@ -166,10 +172,14 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="221" y="23" key="SettingsEditor/0.23.1440.811@0.23.1440.811" timestamp="1584619291930" />
-    <state x="374" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1584778950989">
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2" timestamp="1584781540687">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
-    <state x="374" y="263" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1584778950989" />
+    <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1584781540687" />
+    <state x="374" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1584781186376">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="374" y="263" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1584781186376" />
     <state x="375" y="74" width="689" height="708" key="find.popup" timestamp="1584619896178">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
