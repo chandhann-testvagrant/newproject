@@ -34,6 +34,22 @@ public class BasicActions
         }
     }
 
+    protected void click(WebElement ele)
+    {
+        int attempts = 0;
+        while(attempts < 5)
+        {
+            try
+            {
+                new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(ele));
+                ele.click();
+                break;
+            } catch(StaleElementReferenceException e){}
+
+            attempts++;
+        }
+    }
+
     protected void clickByID(String id)
     {
         int attempts = 0;
@@ -59,6 +75,22 @@ public class BasicActions
             {
                 new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
                 driver.findElement(By.xpath(xpath)).sendKeys(value);
+                break;
+            } catch(StaleElementReferenceException e){}
+
+            attempts++;
+        }
+    }
+
+    protected void type(WebElement ele,String value)
+    {
+        int attempts = 0;
+        while(attempts < 5)
+        {
+            try
+            {
+                new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(ele));
+                ele.sendKeys(value);
                 break;
             } catch(StaleElementReferenceException e){}
 

@@ -6,6 +6,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pom.SearchResultPage;
 import pom.WelcomePage;
 import utils.apihelper.HttpMethods;
 import utils.BaseTest;
@@ -18,10 +19,13 @@ public class Executor extends BaseTest implements Constants
         String beerName="blonde";
         WelcomePage wp=new WelcomePage(driver);
         int resultsUICount=0;
-        if(wp.searchBeer(beerName))
-            resultsUICount = wp.getResultCount();
 
-        JSONObject uiResults = wp.getResultValues();
+        boolean flag=wp.searchBeer(beerName);
+        SearchResultPage sp=new SearchResultPage(driver);
+        if(flag)
+            resultsUICount = sp.getResultCount();
+
+        JSONObject uiResults = sp.getResultValues();
         HttpMethods hp=new HttpMethods(apiUri);
         hp.setEndPoint("beers");
         hp.addParameter("beer_name",beerName);

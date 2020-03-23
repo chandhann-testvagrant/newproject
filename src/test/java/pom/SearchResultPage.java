@@ -5,8 +5,11 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import utils.uihelper.BasicActions;
+
+import java.util.List;
 
 public class SearchResultPage extends BasicActions
 {
@@ -16,11 +19,33 @@ public class SearchResultPage extends BasicActions
         PageFactory.initElements(driver,this);
     }
 
+    @FindBys({
+            @FindBy(xpath = "//div[@class='card']")
+    })
+    public List<WebElement> searchResult;
+
     public int getResultCount()
     {
-
-        return findElementsByXpath("//div[@class='card']").size();
+        return searchResult.size();
     }
+
+
+    @FindBys({
+            @FindBy(tagName = "h2")
+    })
+    public List<WebElement> searchResult_name;
+    @FindBys({
+            @FindBy(xpath = "//p[@class='card__text card__text--gray']")
+    })
+    public List<WebElement> searchResult_tagLine;
+    @FindBys({
+            @FindBy(xpath = "//p[@class='card__text card__text--sm']")
+    })
+    public List<WebElement> searchResult_brewedDate;
+    @FindBys({
+            @FindBy(xpath = "//div[@class='card']//p[2]")
+    })
+    public List<WebElement> searchResult_description;
 
     public JSONObject getResultValues()
     {
@@ -30,11 +55,12 @@ public class SearchResultPage extends BasicActions
         {
             JSONObject temp=new JSONObject();
 
-            temp.put("name",findElementsByTagName("h2").get(i).getText());
-            temp.put("tagline",findElementsByXpath("//p[@class='card__text card__text--gray']").get(i).getText());
-            temp.put("first_brewed",findElementsByXpath("//p[@class='card__text card__text--sm']").get(i).getText());
-            temp.put("description",findElementsByXpath("//div[@class='card']//p[2]").get(i).getText());
-            result.put(findElementsByTagName("h2").get(i).getText(),temp);
+            String name=searchResult_name.get(i).getText();
+            temp.put("name",name);
+            temp.put("tagline",searchResult_tagLine.get(i).getText());
+            temp.put("first_brewed",searchResult_brewedDate.get(i).getText());
+            temp.put("description",searchResult_description.get(i).getText());
+            result.put(name,temp);
         }
 
         return result;
